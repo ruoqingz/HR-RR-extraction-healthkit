@@ -8,7 +8,7 @@ A base table view controller that presents health data.
 import UIKit
 
 /// A protocol for a class that manages a HealthKit query.
-protocol HealthQueryDataSource: class {
+protocol HealthQueryDataSource: AnyObject {
     /// Create and execute a query on a health store. Note: The completion handler returns on a background thread.
     func performQuery(completion: @escaping () -> Void)
 }

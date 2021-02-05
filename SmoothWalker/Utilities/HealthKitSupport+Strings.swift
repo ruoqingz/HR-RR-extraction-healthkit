@@ -50,7 +50,6 @@ func formattedValue(_ value: Double, typeIdentifier: String) -> String? {
     return formattedString
 }
 
-
 private func getRoundedValue(for value: Double, with unit: HKUnit) -> String? {
     let numberFormatter = NumberFormatter()
     
@@ -89,4 +88,3 @@ private func getUnitSuffix(for unit: HKUnit) -> String? {
         return nil
     }
 }
-

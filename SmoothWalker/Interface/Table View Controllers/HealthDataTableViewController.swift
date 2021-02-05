@@ -8,7 +8,7 @@ A table view controller with manual health data entry and the ability to switch 
 import UIKit
 import HealthKit
 
-protocol HealthDataTableViewControllerDelegate: class {
+protocol HealthDataTableViewControllerDelegate: HealthDataTableViewController {
     func didAddNewData(with value: Double)
 }
 

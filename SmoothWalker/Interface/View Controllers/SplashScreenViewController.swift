@@ -7,7 +7,7 @@ A view controller with a simple message and action button.
 
 import UIKit
 
-protocol SplashScreenViewControllerDelegate: class {
+protocol SplashScreenViewControllerDelegate: SplashScreenViewController {
     func didSelectActionButton()
 }
 
