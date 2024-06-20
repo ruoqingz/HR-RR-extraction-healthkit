@@ -7,10 +7,14 @@ A view controller with a simple message and action button.
 
 import UIKit
 
+//define a delegate of SplashScreenViewController
 protocol SplashScreenViewControllerDelegate: SplashScreenViewController {
+    //all the classes follows this protocol have to contain this function
     func didSelectActionButton()
 }
 
+//CGFloat is a class
+//private -- these extension is only seen in this file
 private extension CGFloat {
     static let inset: CGFloat = 20
     static let padding: CGFloat = 12

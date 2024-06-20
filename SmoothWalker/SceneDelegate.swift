@@ -5,6 +5,8 @@ Abstract:
 The scene delegate.
 */
 
+//we dont need this!!!
+
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

@@ -29,8 +29,8 @@ class MainTabViewController: UITabBarController {
         let viewControllers = [
             createWelcomeViewController(),
             createWeeklyQuantitySampleTableViewController(),
-            createChartViewController(),
-            createWeeklyReportViewController()
+//            createChartViewController(),
+//            createWeeklyReportViewController()
         ]
         
         self.viewControllers = viewControllers.map {
@@ -51,12 +51,16 @@ class MainTabViewController: UITabBarController {
     }
     
     private func createWeeklyQuantitySampleTableViewController() -> UIViewController {
-        let dataTypeIdentifier = HKQuantityTypeIdentifier.stepCount.rawValue
+//        let dataTypeIdentifier = HKQuantityTypeIdentifier.stepCount.rawValue
+        let dataTypeIdentifier = HKQuantityTypeIdentifier.heartRate.rawValue
         let viewController = WeeklyQuantitySampleTableViewController(dataTypeIdentifier: dataTypeIdentifier)
         
-        viewController.tabBarItem = UITabBarItem(title: "Health Data",
-                                                 image: UIImage(systemName: "triangle"),
-                                                 selectedImage: UIImage(systemName: "triangle.fill"))
+//        viewController.tabBarItem = UITabBarItem(title: "Health Data",
+//                                                 image: UIImage(systemName: "triangle"),
+//                                                 selectedImage: UIImage(systemName: "triangle.fill"))
+        viewController.tabBarItem = UITabBarItem(title: "Heart Rate Data",
+                                                         image: UIImage(systemName: "triangle"),
+                                                         selectedImage: UIImage(systemName: "triangle.fill"))
         return viewController
     }
     

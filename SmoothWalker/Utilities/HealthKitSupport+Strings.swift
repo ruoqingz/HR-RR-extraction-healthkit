@@ -19,12 +19,16 @@ func getDataTypeName(for identifier: String) -> String? {
         let quantityTypeIdentifier = HKQuantityTypeIdentifier(rawValue: identifier)
         
         switch quantityTypeIdentifier {
-        case .stepCount:
-            description = "Step Count"
-        case .distanceWalkingRunning:
-            description = "Distance Walking + Running"
-        case .sixMinuteWalkTestDistance:
-            description = "Six-Minute Walk"
+        case .heartRate:
+            description = "Heart Rate"
+        case .respiratoryRate:
+            description = "Respiratory Rate"
+//        case .stepCount:
+//            description = "Step Count"
+//        case .distanceWalkingRunning:
+//            description = "Distance Walking + Running"
+//        case .sixMinuteWalkTestDistance:
+//            description = "Six-Minute Walk"
         default:
             break
         }
@@ -70,7 +74,7 @@ private func getRoundedValue(for value: Double, with unit: HKUnit) -> String? {
 func getUnitDescription(for unit: HKUnit) -> String? {
     switch unit {
     case .count():
-        return "steps"
+        return "beats per minute"
     case .meter():
         return "meters"
     default:

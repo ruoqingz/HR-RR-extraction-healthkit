@@ -69,7 +69,7 @@ private func preferredUnit(for identifier: String, sampleType: HKSampleType? = n
 func createAnchorDate() -> Date {
     // Set the arbitrary anchor date to Monday at 3:00 a.m.
     let calendar: Calendar = .current
-    var anchorComponents = calendar.dateComponents([.day, .month, .year, .weekday], from: Date())
+    var anchorComponents = calendar.dateComponents([.second, .minute, .hour, .day, .month, .year,], from: Date())
     let offset = (7 + (anchorComponents.weekday ?? 0) - 2) % 7
     
     anchorComponents.day! -= offset
@@ -93,21 +93,22 @@ func createLastWeekPredicate(from endDate: Date = Date()) -> NSPredicate {
 
 /// Return the most preferred `HKStatisticsOptions` for a data type identifier. Defaults to `.discreteAverage`.
 func getStatisticsOptions(for dataTypeIdentifier: String) -> HKStatisticsOptions {
-    var options: HKStatisticsOptions = .discreteAverage
-    let sampleType = getSampleType(for: dataTypeIdentifier)
-    
-    if sampleType is HKQuantityType {
-        let quantityTypeIdentifier = HKQuantityTypeIdentifier(rawValue: dataTypeIdentifier)
-        
-        switch quantityTypeIdentifier {
-        case .stepCount, .distanceWalkingRunning:
-            options = .cumulativeSum
-        case .sixMinuteWalkTestDistance:
-            options = .discreteAverage
-        default:
-            break
-        }
-    }
+//    var options: HKStatisticsOptions = .discreteAverage
+//    let sampleType = getSampleType(for: dataTypeIdentifier)
+//    
+//    if sampleType is HKQuantityType {
+//        let quantityTypeIdentifier = HKQuantityTypeIdentifier(rawValue: dataTypeIdentifier)
+//        
+//        switch quantityTypeIdentifier {
+//        case .stepCount, .distanceWalkingRunning:
+//            options = .cumulativeSum
+//        case .sixMinuteWalkTestDistance:
+//            options = .discreteAverage
+//        default:
+//            break
+//        }
+//    }
+    let options: HKStatisticsOptions = .discreteAverage
     
     return options
 }
@@ -126,4 +127,15 @@ func getStatisticsQuantity(for statistics: HKStatistics, with statisticsOptions:
     }
     
     return statisticsQuantity
+}
+
+
+// here creates query predicate for the last 5 seconds!
+func getLastSecondsStartDate(from date: Date=Date()) -> Date {
+    return Calendar.current.date(byAdding: .second, value: -3000, to: date)!
+}
+
+func createLastSecondsPredicate(from endDate: Date=Date()) -> NSPredicate{
+    let startDate=getLastSecondsStartDate(from: endDate)
+    return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
 }

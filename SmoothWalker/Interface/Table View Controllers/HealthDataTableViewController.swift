@@ -22,19 +22,19 @@ class HealthDataTableViewController: DataTableViewController {
         updateNavigationItem()
     }
     
-    override func setUpNavigationController() {
-        super.setUpNavigationController()
-        
-        // The data type selection ("More") bar button item.
-        let leftBarButtonItem = UIBarButtonItem(title: "More", style: .plain, target: self,
-                                                action: #selector(didTapLeftBarButtonItem))
-        navigationItem.leftBarButtonItem = leftBarButtonItem
-        
-        // The Add Data bar button item.
-        let rightBarButtonItem = UIBarButtonItem(title: "Add Data", style: .plain, target: self,
-                                                 action: #selector(didTapRightBarButtonItem))
-        navigationItem.rightBarButtonItem = rightBarButtonItem
-    }
+//    override func setUpNavigationController() {
+//        super.setUpNavigationController()
+//        
+//        // The data type selection ("More") bar button item.
+//        let leftBarButtonItem = UIBarButtonItem(title: "More", style: .plain, target: self,
+//                                                action: #selector(didTapLeftBarButtonItem))
+//        navigationItem.leftBarButtonItem = leftBarButtonItem
+//        
+//        // The Add Data bar button item.
+//        let rightBarButtonItem = UIBarButtonItem(title: "Add Data", style: .plain, target: self,
+//                                                 action: #selector(didTapRightBarButtonItem))
+//        navigationItem.rightBarButtonItem = rightBarButtonItem
+//    }
     
     func updateNavigationItem() {
         navigationItem.title = getDataTypeName(for: dataTypeIdentifier)
