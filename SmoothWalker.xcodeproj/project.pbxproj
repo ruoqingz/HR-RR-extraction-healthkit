@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		604E1EF42C233805004013E7 /* HRDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E1EF32C233805004013E7 /* HRDataTableViewController.swift */; };
+		604E1EFC2C257B90004013E7 /* SmoothWalkerWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E1EFB2C257B90004013E7 /* SmoothWalkerWatchApp.swift */; };
+		604E1F002C257B92004013E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604E1EFF2C257B92004013E7 /* Assets.xcassets */; };
+		604E1F032C257B92004013E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604E1F022C257B92004013E7 /* Preview Assets.xcassets */; };
+		604E1F062C257B92004013E7 /* SmoothWalkerWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 604E1EF92C257B90004013E7 /* SmoothWalkerWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		604E1F0C2C257F2F004013E7 /* BreatheRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E1F0B2C257F2F004013E7 /* BreatheRateView.swift */; };
+		604E1F0E2C2594A8004013E7 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E1F0D2C2594A8004013E7 /* HeartRateView.swift */; };
+		604E1F102C25962F004013E7 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604E1F0F2C25962F004013E7 /* HealthKitManager.swift */; };
 		EB12722B24859C1600548CD1 /* DataTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */; };
 		EB12722D2485BA9400548CD1 /* HealthDataTypeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */; };
 		EB12722F2485C83E00548CD1 /* EmptyDataBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12722E2485C83E00548CD1 /* EmptyDataBackgroundView.swift */; };
@@ -40,8 +48,40 @@
 		F9907B09245894E600987667 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9907B08245894E600987667 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		604E1F042C257B92004013E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9907AE72458947B00987667 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 604E1EF82C257B90004013E7;
+			remoteInfo = "SmoothWalkerWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		604E1F0A2C257B92004013E7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				604E1F062C257B92004013E7 /* SmoothWalkerWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		604E1EF32C233805004013E7 /* HRDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRDataTableViewController.swift; sourceTree = "<group>"; };
+		604E1EF92C257B90004013E7 /* SmoothWalkerWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmoothWalkerWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		604E1EFB2C257B90004013E7 /* SmoothWalkerWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothWalkerWatchApp.swift; sourceTree = "<group>"; };
+		604E1EFF2C257B92004013E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		604E1F022C257B92004013E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		604E1F0B2C257F2F004013E7 /* BreatheRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheRateView.swift; sourceTree = "<group>"; };
+		604E1F0D2C2594A8004013E7 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
+		604E1F0F2C25962F004013E7 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		DDC3EAD6D9404AADDCC92FF8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EB12722A24859C1600548CD1 /* DataTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypeTableViewCell.swift; sourceTree = "<group>"; };
 		EB12722C2485BA9400548CD1 /* HealthDataTypeValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataTypeValue.swift; sourceTree = "<group>"; };
@@ -67,7 +107,7 @@
 		EB9525BF2474C9C2001B5178 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		EB9525C12475BD41001B5178 /* HealthKitSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSupport.swift; sourceTree = "<group>"; };
 		EBEF213B2462289B0055F482 /* FeedItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemCollectionViewCell.swift; sourceTree = "<group>"; };
-		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
+		F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ACKNOWLEDGMENTS.txt; sourceTree = "<group>"; };
 		F9907AEF2458947C00987667 /* SmoothWalker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmoothWalker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9907AF22458947C00987667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9907AF42458947C00987667 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,10 +117,17 @@
 		F9907B002458947D00987667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9907B06245894E600987667 /* SmoothWalker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmoothWalker.entitlements; sourceTree = "<group>"; };
 		F9907B08245894E600987667 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE.txt; sourceTree = "<group>"; };
+		FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		604E1EF62C257B90004013E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9907AEC2458947C00987667 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,8 +146,28 @@
 				FEDEA0134A58BE9A54B6DBA4 /* LICENSE.txt */,
 				F06C5C28897D1C25EF30CF88 /* ACKNOWLEDGMENTS.txt */,
 			);
-			name = LICENSE;
 			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		604E1EFA2C257B90004013E7 /* SmoothWalkerWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				604E1EFB2C257B90004013E7 /* SmoothWalkerWatchApp.swift */,
+				604E1F0B2C257F2F004013E7 /* BreatheRateView.swift */,
+				604E1F0F2C25962F004013E7 /* HealthKitManager.swift */,
+				604E1F0D2C2594A8004013E7 /* HeartRateView.swift */,
+				604E1EFF2C257B92004013E7 /* Assets.xcassets */,
+				604E1F012C257B92004013E7 /* Preview Content */,
+			);
+			path = "SmoothWalkerWatch Watch App";
+			sourceTree = "<group>";
+		};
+		604E1F012C257B92004013E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				604E1F022C257B92004013E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		A84DF625EC23E377183A6CF9 /* Configuration */ = {
@@ -116,6 +183,7 @@
 			children = (
 				EB1272322485D5D200548CD1 /* DataTableViewController.swift */,
 				EB9525B42474C282001B5178 /* HealthDataTableViewController.swift */,
+				604E1EF32C233805004013E7 /* HRDataTableViewController.swift */,
 				EB9525B92474C8F2001B5178 /* ChartTableViewController.swift */,
 				EB305B7B2485D99B007A7694 /* HealthQueryTableViewController.swift */,
 			);
@@ -234,6 +302,7 @@
 			children = (
 				DDC3EAD6D9404AADDCC92FF8 /* README.md */,
 				F9907AF12458947C00987667 /* SmoothWalker */,
+				604E1EFA2C257B90004013E7 /* SmoothWalkerWatch Watch App */,
 				F9907AF02458947C00987667 /* Products */,
 				F9907B07245894E600987667 /* Frameworks */,
 				A84DF625EC23E377183A6CF9 /* Configuration */,
@@ -245,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				F9907AEF2458947C00987667 /* SmoothWalker.app */,
+				604E1EF92C257B90004013E7 /* SmoothWalkerWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -277,6 +347,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		604E1EF82C257B90004013E7 /* SmoothWalkerWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604E1F072C257B92004013E7 /* Build configuration list for PBXNativeTarget "SmoothWalkerWatch Watch App" */;
+			buildPhases = (
+				604E1EF52C257B90004013E7 /* Sources */,
+				604E1EF62C257B90004013E7 /* Frameworks */,
+				604E1EF72C257B90004013E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmoothWalkerWatch Watch App";
+			productName = "SmoothWalkerWatch Watch App";
+			productReference = 604E1EF92C257B90004013E7 /* SmoothWalkerWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F9907AEE2458947C00987667 /* SmoothWalker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9907B032458947D00987667 /* Build configuration list for PBXNativeTarget "SmoothWalker" */;
@@ -284,10 +371,12 @@
 				F9907AEB2458947C00987667 /* Sources */,
 				F9907AEC2458947C00987667 /* Frameworks */,
 				F9907AED2458947C00987667 /* Resources */,
+				604E1F0A2C257B92004013E7 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				604E1F052C257B92004013E7 /* PBXTargetDependency */,
 			);
 			name = SmoothWalker;
 			packageProductDependencies = (
@@ -303,10 +392,14 @@
 		F9907AE72458947B00987667 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
+					604E1EF82C257B90004013E7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					F9907AEE2458947C00987667 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -329,11 +422,21 @@
 			projectRoot = "";
 			targets = (
 				F9907AEE2458947C00987667 /* SmoothWalker */,
+				604E1EF82C257B90004013E7 /* SmoothWalkerWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		604E1EF72C257B90004013E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604E1F032C257B92004013E7 /* Preview Assets.xcassets in Resources */,
+				604E1F002C257B92004013E7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9907AED2458947C00987667 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +451,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		604E1EF52C257B90004013E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604E1F0E2C2594A8004013E7 /* HeartRateView.swift in Sources */,
+				604E1EFC2C257B90004013E7 /* SmoothWalkerWatchApp.swift in Sources */,
+				604E1F102C25962F004013E7 /* HealthKitManager.swift in Sources */,
+				604E1F0C2C257F2F004013E7 /* BreatheRateView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F9907AEB2458947C00987667 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +477,7 @@
 				EB305B7E2485E4B8007A7694 /* HealthKitSupport+Strings.swift in Sources */,
 				EB644FA32473136500CF27F0 /* ServerResponse.swift in Sources */,
 				EB326B50246B1B5700FEFD08 /* HealthData.swift in Sources */,
+				604E1EF42C233805004013E7 /* HRDataTableViewController.swift in Sources */,
 				EB9525C22475BD41001B5178 /* HealthKitSupport.swift in Sources */,
 				EB9525BC2474C930001B5178 /* WeeklyReportTableViewController.swift in Sources */,
 				EBEF213C2462289B0055F482 /* FeedItemCollectionViewCell.swift in Sources */,
@@ -381,6 +496,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		604E1F052C257B92004013E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 604E1EF82C257B90004013E7 /* SmoothWalkerWatch Watch App */;
+			targetProxy = 604E1F042C257B92004013E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EB1B0CAC2486D7A700724782 /* Localizable.stringsdict */ = {
@@ -402,6 +525,77 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		604E1F082C257B92004013E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmoothWalkerWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 44FR7U7YUK;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SmoothWalkerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.SmoothWalker44FR7U7YUK";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SmoothWalker44FR7U7YUK.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.3;
+			};
+			name = Debug;
+		};
+		604E1F092C257B92004013E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmoothWalkerWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 44FR7U7YUK;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SmoothWalkerWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.example.apple-samplecode.SmoothWalker44FR7U7YUK";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.SmoothWalker44FR7U7YUK.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.3;
+			};
+			name = Release;
+		};
 		F9907B012458947D00987667 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */;
@@ -524,10 +718,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "SmoothWalker/Supporting Files/SmoothWalker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 44FR7U7YUK;
 				INFOPLIST_FILE = "SmoothWalker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -547,10 +742,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8037822B27C5C24067AC1EBF /* SampleCode.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "SmoothWalker/Supporting Files/SmoothWalker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 44FR7U7YUK;
 				INFOPLIST_FILE = "SmoothWalker/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +765,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		604E1F072C257B92004013E7 /* Build configuration list for PBXNativeTarget "SmoothWalkerWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604E1F082C257B92004013E7 /* Debug */,
+				604E1F092C257B92004013E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F9907AEA2458947B00987667 /* Build configuration list for PBXProject "SmoothWalker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

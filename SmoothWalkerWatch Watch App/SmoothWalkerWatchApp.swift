@@ -9,10 +9,18 @@
 import SwiftUI
 
 @main
-struct SmoothWalkerWatch_Watch_AppApp: App {
+struct SmoothWalkerWatch_Watch_App: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+            WindowGroup {
+                TabView {
+                    HeartRateView()
+                        .tabItem {
+                            Label("心率", systemImage: "heart.fill")
+                        }
+                }
+            }
         }
-    }
 }
+
+
+
