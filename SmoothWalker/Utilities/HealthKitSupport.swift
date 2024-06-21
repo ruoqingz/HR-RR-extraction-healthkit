@@ -130,12 +130,8 @@ func getStatisticsQuantity(for statistics: HKStatistics, with statisticsOptions:
 }
 
 
-// here creates query predicate for the last 5 seconds!
-func getLastSecondsStartDate(from date: Date=Date()) -> Date {
-    return Calendar.current.date(byAdding: .second, value: -3000, to: date)!
-}
 
 func createLastSecondsPredicate(from endDate: Date=Date()) -> NSPredicate{
-    let startDate=getLastSecondsStartDate(from: endDate)
-    return HKQuery.predicateForSamples(withStart: startDate, end: endDate)
+    let startDate=endDate.addingTimeInterval(-30)
+    return HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: .strictEndDate)
 }
